@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            vue basics 
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style>
+        .one{
+            color: brown;
+        }
+        .two{
+            text-align: center;
+        }
+        </style>
+    </head>
+   <body>   
+
+   <h1> vue basics</h1>
+   <div id="app">
+   <h2>{{ title }}</h2>
+   <h3>{{ greet() }}</h3>
+   <a href="{{ url }}"> Youtube</a>
+   <div :class="classes">classes from instance</div>
+   <input type="text" :value="name">
+   <p>i earn {{ wage }} pounds per hour</p>
+   <button v-on:click="wage++">Increase wage by $1</button>
+</div>
+   <script src="app.js"></script>
+      </body>
+</html>
